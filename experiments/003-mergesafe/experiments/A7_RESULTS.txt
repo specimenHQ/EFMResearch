@@ -1,0 +1,2 @@
+A7: FALSIFIED initial assumption — default json.loads accepted all 3 non-standard constants.
+A7 correction microtest: PASS — parse_constant hook rejected all 3.
