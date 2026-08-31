@@ -1,22 +1,17 @@
 # Metrics — Experiment 004 FrameSafe
 
-- Track: EFM-native
-- Protocol: v0.2
-- Active elapsed time: not independently instrumented
-- Assumptions admitted: 6
-- Classes: 1 existential, 2 architectural, 3 operational
-- Preimplementation microtests: 6
-- Judge falsifications: 8 attempted / 8 rejected / 0 accepted
-- Final integration tests: 11 passed / 0 failed
-- Implementation logical non-comment LOC: 171
-- Integration-test logical non-comment LOC: 162
-- Judge logical non-comment LOC: 89
-- Third-party dependencies: 0
-- Consequential assumptions falsified before implementation: 2 (A1, A6)
-- Consequential defects found after implementation: 0
-- Post-green integration challenges: 1 / passed
-- Implementation discarded: 0
-- Escaped defects in representative use: not measured
-- Evidence level reached: E5
-- EFM changed final design: yes — exact-read semantics and total-frame deadline were evidence-earned before implementation
-- E6 operational evidence: none
+- track: EFM-native
+- protocol: v0.2
+- admitted assumptions: 6
+- preimplementation microtest claims: 6
+- decision-changing prebuild findings: 1 material design constraint (A6 total deadline)
+- integration tests: 11 pass / 0 fail
+- known-false judge cases: 7 presented / 7 rejected / 0 accepted
+- judge false-acceptance rate: 0/7
+- third-party dependencies: 0
+- implementation logical non-comment LOC: 53
+- integration-test logical non-comment LOC: 83
+- judge-attack logical non-comment LOC: 126
+- post-green defects found: 0
+- evidence level: E5
+- operational evidence: none

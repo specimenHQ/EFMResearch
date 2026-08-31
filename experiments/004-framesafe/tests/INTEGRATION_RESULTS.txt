@@ -1,4 +1,14 @@
-11 tests run
-11 passed
-0 failed
-Post-green real TCP fragmentation/coalescing challenge: PASS
+test_adjacent ... ok
+test_clean_eof ... ok
+test_empty ... ok
+test_exact_max_and_plus_one ... ok
+test_first_frame_survives_second_frame_timeout ... ok
+test_fragmented_header_and_payload ... ok
+test_oversize_rejected_without_payload ... ok
+test_partial_header ... ok
+test_partial_payload ... ok
+test_roundtrip_binary ... ok
+test_total_deadline ... ok
+
+Ran 11 tests in 0.476s
+OK

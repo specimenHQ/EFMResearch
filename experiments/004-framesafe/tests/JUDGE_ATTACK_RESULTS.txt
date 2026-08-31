@@ -1,0 +1,9 @@
+GOOD 7/7
+host_endian: 3/7 REJECTED=True
+off_by_one: 5/7 REJECTED=True
+zero_is_eof: 5/7 REJECTED=True
+partial_eof_clean: 4/7 REJECTED=True
+oversize_late: 5/7 REJECTED=True
+single_recv: 5/7 REJECTED=True
+per_read_timeout: 6/7 REJECTED=True
+JUDGE 7/7 false candidates rejected
