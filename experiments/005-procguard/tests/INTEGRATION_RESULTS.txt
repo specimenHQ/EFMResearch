@@ -1,0 +1,2 @@
+10 integration tests passed before post-green challenge.
+Post-green detached-session challenge then falsified the broad timeout guarantee; see POST_GREEN_FALSIFICATION.txt.

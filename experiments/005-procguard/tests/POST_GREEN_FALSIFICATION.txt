@@ -1,0 +1,5 @@
+timed_out=True
+requested_timeout=0.4
+elapsed=3.020
+detached descendant created a new session and retained inherited output pipes
+RESULT: broad hard-timeout/no-surviving-descendants guarantee falsified for rejected v0

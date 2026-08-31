@@ -1,0 +1,5 @@
+A1 FALSIFIED naive timeout cleanup: grandchild survived direct-child timeout
+A2 PASS new session + killpg removes tested process tree
+A3 PASS communicate preserves stdout/stderr and exit 7
+A4 PASS argv boundary avoids shell expansion
+A5 PASS signal exit represented by negative return code -15
