@@ -1,0 +1,9 @@
+known-bad lexical sorter: 4 failures detected
+  DETECTED: targeted offset/date-boundary ordering
+  DETECTED: tuple input
+  DETECTED: naive timestamp rejection
+  DETECTED: 500-entry randomized ordering/stability fixture
+known-bad naive-accepting sorter: 1 failures detected
+  DETECTED: naive timestamp rejection
+known-bad unstable-equal sorter: 1 failures detected
+  DETECTED: 500-entry randomized ordering/stability fixture
