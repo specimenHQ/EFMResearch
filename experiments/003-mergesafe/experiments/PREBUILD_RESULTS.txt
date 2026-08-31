@@ -1,0 +1,6 @@
+A1: PASS — Unequal JSON text parsed to equal objects, so raw text would create a false conflict.
+A2: PASS — Equivalent objects canonicalized identically as '{"id":"r1","n":1,"name":"Ada"}'.
+A3: PASS — Injected pre-replace failure left the previous output bytes unchanged.
+A4: PASS — os.path.samefile identified a symlink alias as the same existing file.
+A5: PASS — Reordered inputs and object keys produced byte-identical output (47 bytes).
+A6: PASS — json, tempfile, os.replace, fsync, and samefile are available in the Python standard library.
