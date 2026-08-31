@@ -1,0 +1,9 @@
+baseline known-good: PASS
+permissive non-standard constants: REJECTED
+duplicate object members silently overwritten: REJECTED
+numeric representation treated as identity: REJECTED
+conflicting duplicate silently accepted: REJECTED
+output/input alias check disabled: REJECTED
+record output order depends on insertion order: REJECTED
+staged replace bypassed: REJECTED
+known-false mutants rejected: 7/7
