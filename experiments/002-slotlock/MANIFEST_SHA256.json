@@ -1,0 +1,19 @@
+{
+  "ASSUMPTION_REGISTER.md": "8c65dd8d84df789f52cae564c9150a92cb7d5532216369b6ecfb4b7ccffa56e5",
+  "BUILD_HISTORY.md": "b8cdacc1c4b7d5a4e6b91bceedbe5add21a8539382e9a3e9cbeb8f8783301222",
+  "DECISION_MAP.md": "6ee6273ef6aeb28c59c31d0e627f3ad707e1f892c72bca905078e763eabec16d",
+  "EVIDENCE_LEDGER.md": "a42175153358041e84abfaab1ec66e514526dc63fc2bc19a77466c7444c50e7b",
+  "EVIDENCE_LEDGER_PREBUILD.md": "4a2b56684c4f89b83fd43f599acf3b6133852dfabdcdf8e20b58ffaef06102bc",
+  "GOAL.md": "05448f767f773682ffb8ed05ff690ba9f2dad231bd5eee2b76414a7a4ce107c2",
+  "INTEGRATION_CHECKPOINT.md": "5604cf948407166616193bc6777a8c870f8f1560a3c3810abfdf08c26160711b",
+  "README.md": "7a2c424fab5c2c575f8f7dab0e36c428216fcfd0ce558fd82d4ad22301b8cddf",
+  "RUN_LOG.md": "cf8090461fedff414b668f449cd34e802a7381137c8790cd73e166e6e1f41944",
+  "experiments/PREIMPLEMENTATION_RESULTS.md": "a7beaabbe098b8c50988067fc34cfdf8de3e3f4f8756e67b2c25d0320e1386ec",
+  "history/__pycache__/slotlock_v0_rejected.cpython-313.pyc": "7e21d9296fe7695215a3907cd8d1ce337a0abe10e02797ba85b0e5a59cbd11a3",
+  "history/slotlock_v0_rejected.py": "ae1be67c029c1ed612b6b589aeeac47f07896af865b4593736cd5be0f5c00974",
+  "src/__pycache__/slotlock.cpython-313.pyc": "ea5c765b509c0bbf55ea8e571576a51981f2834fe9d9fec7bca98dc062566e7b",
+  "src/slotlock.py": "1b6b02162db0178cac56b75914c8312913a27db206c5f4e2ea3170c6dc078e1f",
+  "tests/__pycache__/test_slotlock.cpython-313.pyc": "efc0d1d5c91993e3f4ef8886d1ad18db5afbed19a3246ec4159b5a28bcba3564",
+  "tests/attack_the_judge.py": "8d89449db6d4b793d5a12b26a6d5b4345139728d47635558f07d4d4e2d337eb9",
+  "tests/test_slotlock.py": "2bf1a952f08cc4960aaaea9c8c2d8d7d613023d377605ff0b5ea5f673adbc4b5"
+}
