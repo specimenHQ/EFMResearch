@@ -1,12 +1,12 @@
 # EFM Research Protocol
 
-Version: `0.1 — Frozen for initial replication`  
-Frozen: `2026-08-31`  
-Status: `FROZEN UNTIL AFTER EFM-NATIVE BUILD #003`
+Version: `0.2 — Claim-scope hardening`  
+Effective: `2026-08-31`  
+Status: `FROZEN FOR EXPERIMENTS #004–#006`
 
 ## Purpose
 
-This protocol defines what counts as an EFM run during the initial replication phase. It is frozen so later results cannot silently change the method that produced earlier results.
+This protocol defines what counts as an EFM run during the next replication phase. It is versioned so later results cannot silently change the method that produced earlier results.
 
 EFM is not required for every implementation detail. It is admitted when uncertainty could materially change the project, architecture, reliability, safety, cost, or later work.
 
@@ -34,14 +34,17 @@ Use these ordinal classes without assigning invented numerical weights:
 
 Full EFM microtesting should normally target existential, architectural, and consequential operational assumptions. Optimizing or cosmetic questions require a specific reason for admission.
 
-## 3. Define a falsifiable uncertainty
+## 3. Define a falsifiable uncertainty and claim scope
 
 For each admitted assumption, state:
 
 - what is believed;
 - what observation would falsify or materially weaken it;
 - what decision would change if it is false;
-- the smallest boundary at which the claim can credibly be tested.
+- the smallest boundary at which the claim can credibly be tested;
+- the exact **claim scope** the proposed fixture can support.
+
+A passing fixture supports only the invariant it actually exercises. Do not generalize from one representation, equivalence case, failure class, or boundary condition to a broader class without additional evidence.
 
 Do not code a broad implementation merely to discover whether the assumption was valid.
 
@@ -55,11 +58,15 @@ A microtest must:
 - leave enough durable evidence to inspect independently;
 - avoid unnecessary framework or application construction.
 
+When a claim depends on equivalence, identity, parsing, classification, routing, or another family of inputs, include a materially different neighboring or boundary case before treating the result as support for the broader family.
+
 A test that merely prints an expected label is not evidence of the underlying behavior.
 
 ## 5. Attack the judge
 
 Before relying on an important evaluator, give it one or more deliberately plausible false cases.
+
+At least one important judge attack should be a **near miss**: a case close enough to valid behavior that a weak judge could plausibly accept it, not only an obviously broken case.
 
 Examples include:
 
@@ -68,7 +75,8 @@ Examples include:
 - fabricated success flags;
 - duplicated or copied transition history;
 - wrong identity/digest/provenance;
-- expected phrases without the required causal behavior.
+- expected phrases without the required causal behavior;
+- expected failure labels produced by the wrong underlying failure class.
 
 If the judge accepts a known falsification, stop and improve the judge before interpreting candidate results.
 
@@ -101,6 +109,8 @@ Record:
 - failures predicted by microtests;
 - emergent failures missed by microtests;
 - the earliest checkpoint that could have detected each failure.
+
+A first green integration run is a checkpoint, not automatically completion. Before assigning E5, challenge at least one consequential integration-specific failure path that is not merely a replay of the original microtest fixtures.
 
 An E2/E3 component result must not be presented as E5 or E6 evidence.
 
@@ -139,6 +149,7 @@ At minimum, an EFM-native experiment should leave:
 - goal;
 - decision map;
 - assumption register;
+- claim scope for important microtests;
 - microtest evidence;
 - evidence ledger;
 - judge attack where applicable;
@@ -147,6 +158,8 @@ At minimum, an EFM-native experiment should leave:
 - metrics record;
 - outcome summary including negative results.
 
-## 12. Initial replication constraint
+## 12. Replication constraint
 
-Do not revise this protocol during EFM-native build #003 merely to improve that experiment's outcome. Record proposed changes separately and evaluate them after the run.
+Protocol v0.2 applies prospectively beginning with experiment #004. Experiments #001–#003 remain v0.1 studies.
+
+Do not revise v0.2 during experiments #004–#006 merely to improve an outcome. Record proposed changes separately and review them after #006 unless a protocol-integrity defect makes continued use invalid.
