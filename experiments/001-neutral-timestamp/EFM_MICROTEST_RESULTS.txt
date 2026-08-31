@@ -1,0 +1,5 @@
+MT1 PASS: lexical sorting falsified
+MT2 PASS: required syntax parsed
+MT3 PASS: offset-equivalent instants compare equal
+MT4 PASS: naive timestamp detectable
+MT5 PASS: sort stability observed
