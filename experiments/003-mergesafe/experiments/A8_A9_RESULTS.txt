@@ -1,0 +1,4 @@
+A8: FALSIFIED v0 — parsed-equal numeric spellings produced different canonical strings and false conflict.
+A8 correction: PASS — current project-canonical number rendering collapses 1 and 1.0 deterministically.
+A9: FALSIFIED v0 — duplicate object member names silently used last-write-wins parsing.
+A9 correction: PASS — current strict parser rejects duplicate object member names.
