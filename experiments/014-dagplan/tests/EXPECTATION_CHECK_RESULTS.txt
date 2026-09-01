@@ -1,0 +1,1 @@
+PASS — independent recursive longest-dependency-depth oracle derived ((A,B),(C,D),(E)) for the nontrivial five-task fixture before the integration expectation was accepted.
