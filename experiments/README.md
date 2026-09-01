@@ -13,6 +13,7 @@ This table summarizes experiments whose outcomes have been reviewed in the activ
 | 011 | QueueGate | EFM-native | Preimplementation evidence changed close/admission architecture. Final 11/11 integration; 200-round post-green race challenge passed; 5/5 false designs rejected. Accepted at E5 within scope. |
 | 012 | RowMerge | EFM-native | Four data-reconciliation shortcuts were falsified before implementation. Initial evaluator mistake corrected without application change; final 11/11 integration and 5/5 false designs rejected. E5 within CSV-reconciliation scope. |
 | 013 | WallClock | EFM-native | First clean v0.3 run. Direct timezone attachment and fixed UTC 24-hour stepping were rejected before code; prebuild gate 6/6 accounted, evaluator expectations independently checked, final 12/12 integration and 5/5 false designs rejected. Accepted at E5 within tested local-scheduling scope. |
+| 014 | DAGPlan | EFM-native | Clean v0.3 dependency-planning run. Prebuild evidence rejected live-frontier stage mutation and permissive graph-input shortcuts; gate 6/6 tested, first integration 11/11, 720-permutation post-green oracle challenge passed, and 5/5 false planners rejected. Accepted at E5 within finite in-memory planning scope. |
 
 ## Protocol markers
 
