@@ -56,7 +56,10 @@ The dominant limitation is now research independence. These studies are still la
 - `experiments/` — append-only experiment history.
 - `templates/` — reusable experiment records.
 - `prebugging/` — separate methodological track.
-- `results/` — aggregate/interim synthesis after enough comparable evidence exists.
+- `results/INTERIM_SYNTHESIS_AFTER_016.md` — current evidence synthesis and limitations.
+- `replication/BLIND_START_PACKET.md` — standalone protocol packet for a new investigator/model without exposing prior outcomes.
+- `replication/INDEPENDENT_REPRODUCTION_BRIEF.md` — independence, instrumentation, artifact, and E4-review requirements.
+- `replication/REPLICATION_RESULT_TEMPLATE.md` — structured submission template for an independent run.
 
 ## Active continuation
 
@@ -64,4 +67,6 @@ New work remains restricted to non-cyber software domains. Historical material r
 
 Experiment 016 completed the recommended preregistered controlled comparison and produced a null correctness/rework result: both frozen line-mapper implementations passed 20,590 common checks plus 161,669 fresh post-green checks with zero candidate failures. EFM rejected a plausible `splitlines()` architecture before code, but build-first independently selected the same correct explicit scanner.
 
-The highest-information next step is **independent reproduction or representative real-project use**, not another same-investigator bounded toy build. Until that evidence exists, no E4 methodology, E6 operational, superiority, or statistical-significance claim is warranted.
+The repository is now prepared for **independent reproduction** without pretending a further self-run experiment would count as independence. The blind start packet can be handed to another investigator/model before they read the existing outcomes; their completed artifacts can then be reviewed against the independent-reproduction brief for possible E4 methodology evidence.
+
+Until independent or representative operational evidence exists, no E4 methodology, E6 operational, superiority, or statistical-significance claim is warranted.
