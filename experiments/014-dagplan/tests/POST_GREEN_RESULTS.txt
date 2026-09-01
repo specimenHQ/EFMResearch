@@ -1,0 +1,1 @@
+PASS — 720 declaration permutations of the new six-task fixture matched the independently derived depth oracle ((A,C),(B,D),(E),(F)).
