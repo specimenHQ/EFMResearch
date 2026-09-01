@@ -14,12 +14,14 @@ This table summarizes experiments whose outcomes have been reviewed in the activ
 | 012 | RowMerge | EFM-native | Four data-reconciliation shortcuts were falsified before implementation. Initial evaluator mistake corrected without application change; final 11/11 integration and 5/5 false designs rejected. E5 within CSV-reconciliation scope. |
 | 013 | WallClock | EFM-native | First clean v0.3 run. Direct timezone attachment and fixed UTC 24-hour stepping were rejected before code; prebuild gate 6/6 accounted, evaluator expectations independently checked, final 12/12 integration and 5/5 false designs rejected. Accepted at E5 within tested local-scheduling scope. |
 | 014 | DAGPlan | EFM-native | Clean v0.3 dependency-planning run. Prebuild evidence rejected live-frontier stage mutation and permissive graph-input shortcuts; gate 6/6 tested, first integration 11/11, 720-permutation post-green oracle challenge passed, and 5/5 false planners rejected. Accepted at E5 within finite in-memory planning scope. |
+| 015 | SpanEdit | EFM-native | Third clean v0.3 run. Left-to-right original-coordinate mutation and ambiguous insertion semantics were rejected before code; gate 6/6 tested, first integration 14/14, 720-permutation Unicode post-green oracle challenge passed. Judge v0 was defective and rejected before E3; corrected judge rejected 5/5 false editors. Accepted at E5. |
 
 ## Protocol markers
 
 - Experiments 001–003: Protocol v0.1.
 - Later studies retain the protocol/classification recorded in their own artifacts.
-- Protocol v0.3 begins prospectively with experiment 013 and is frozen for experiments 013–015.
+- Protocol v0.3 began prospectively with experiment 013.
+- `PROTOCOL_REVIEW_AFTER_015.md` retains v0.3 unchanged after three clean runs and recommends changing the research design rather than adding protocol rules.
 - Protocol-deviant runs remain in the history but do not receive clean-replication credit.
 
 ## Active boundary
