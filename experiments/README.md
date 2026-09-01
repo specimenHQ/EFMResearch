@@ -12,12 +12,13 @@ This table summarizes experiments whose outcomes have been reviewed in the activ
 | 010 | RecordTape | EFM-native | Preimplementation evidence changed record framing twice. Final 11/11 integration, post-green torn-write challenge passed, 5/5 false designs rejected. Accepted at E5 within narrow scope. |
 | 011 | QueueGate | EFM-native | Preimplementation evidence changed close/admission architecture. Final 11/11 integration; 200-round post-green race challenge passed; 5/5 false designs rejected. Accepted at E5 within scope. |
 | 012 | RowMerge | EFM-native | Four data-reconciliation shortcuts were falsified before implementation. Initial evaluator mistake corrected without application change; final 11/11 integration and 5/5 false designs rejected. E5 within CSV-reconciliation scope. |
+| 013 | WallClock | EFM-native | First clean v0.3 run. Direct timezone attachment and fixed UTC 24-hour stepping were rejected before code; prebuild gate 6/6 accounted, evaluator expectations independently checked, final 12/12 integration and 5/5 false designs rejected. Accepted at E5 within tested local-scheduling scope. |
 
 ## Protocol markers
 
 - Experiments 001–003: Protocol v0.1.
 - Later studies retain the protocol/classification recorded in their own artifacts.
-- Protocol v0.3 begins prospectively with experiment 013.
+- Protocol v0.3 begins prospectively with experiment 013 and is frozen for experiments 013–015.
 - Protocol-deviant runs remain in the history but do not receive clean-replication credit.
 
 ## Active boundary
