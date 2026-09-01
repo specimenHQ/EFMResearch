@@ -1,0 +1,2 @@
+PASS — 5/5 known-false planners rejected; accepted implementation accepted.
+Mutants: live-frontier stage collapse, input declaration order authority, duplicate task last-write-wins, unknown dependency invention, and silent cycle omission.
