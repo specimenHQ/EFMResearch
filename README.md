@@ -28,38 +28,40 @@ Earlier experiments keep their original classifications. Protocol changes are pr
 
 ## Current evidence pattern
 
-The repository contains both positive and negative methodological evidence:
+The repository now contains a mixed pattern rather than a simple success story:
 
-- small bounded work can pass equally well without EFM, producing a useful null result;
 - multiple EFM-native runs changed architecture before implementation;
-- some first green implementations survived post-green challenges without rework;
-- some runs exposed false confidence in the implementation or in an earlier microtest;
-- multiple runs exposed evaluator defects rather than application defects;
+- some EFM-native runs exposed implementation defects, overgeneralized microtests, or evaluator defects;
+- clean v0.3 runs 013–015 all dispositioned consequential assumptions before code and independently checked important expectations;
+- first evidence-earned implementations in 013–015 then survived integration/post-green testing without application rework;
+- two controlled comparisons, 001 and 016, produced **null delivered-correctness results**: EFM generated more preimplementation evidence but the ordinary build-first arm independently delivered an equally correct first implementation;
 - protocol-deviant runs are retained but excluded from clean-replication credit;
-- experiments 013–015 all passed the v0.3 prebuild completeness gate before code;
-- alternate expectation checks were usable across scheduling, dependency planning, and text transformation;
-- experiment 015 caught and rejected a defective adversarial judge before E3 evidence was accepted.
+- evaluator failures are preserved separately rather than being misreported as candidate failures.
 
 No E0–E6 level is converted into a confidence percentage, and no universal EFM score is used.
 
-## Current limitation
+## Current interpretation
 
-The dominant limitation is now research design rather than another missing protocol rule. The studies are still largely same-investigator/model, investigator-designed synthetic tasks, with no independent E4 methodology reproduction and no operational E6 evidence. More EFM-native small builds alone now have diminishing information value.
+The evidence increasingly supports a **scope claim**, not a universal development claim. EFM appears most defensible when a consequential assumption is genuinely uncertain and can alter architecture, reliability, or expensive downstream work. The controlled null results show that producing more evidence is not itself enough: on bounded tasks, a careful ordinary implementation may reach the same correct design with less process.
+
+The dominant limitation is now research independence. These studies are still largely same-investigator/model and investigator-designed. The repository has no independent E4 methodology reproduction and no representative operational E6 evidence.
 
 ## Repository map
 
 - `RESEARCH_AGENDA.md` — original v0.1 exploratory agenda, preserved as the historical starting point.
 - `PROTOCOL.md` — current method; v0.3 retained unchanged after experiment 015.
 - `PROTOCOL_REVIEW_AFTER_012.md` — evidence-based review leading to v0.3.
-- `PROTOCOL_REVIEW_AFTER_015.md` — frozen-block review retaining v0.3 unchanged and redirecting the next phase toward controlled comparison.
+- `PROTOCOL_REVIEW_AFTER_015.md` — review retaining v0.3 unchanged and redirecting the next phase toward stronger research design.
 - `METRICS.md` — descriptive measurements collected across studies.
 - `experiments/` — append-only experiment history.
 - `templates/` — reusable experiment records.
 - `prebugging/` — separate methodological track.
-- `results/` — aggregate results only after enough comparable studies exist.
+- `results/` — aggregate/interim synthesis after enough comparable evidence exists.
 
 ## Active continuation
 
 New work remains restricted to non-cyber software domains. Historical material remains preserved but is not being expanded into cybersecurity research.
 
-Experiments 013 WallClock, 014 DAGPlan, and 015 SpanEdit completed the first frozen v0.3 block as clean EFM-native E5 studies. Protocol review found no reason to create v0.4. The preferred next experiment is **016: a preregistered medium-consequence controlled comparison**, with the build-first implementation frozen before any EFM microtests, both arms frozen before a common adversarial evaluation, and null results preserved if the ordinary arm performs equally well.
+Experiment 016 completed the recommended preregistered controlled comparison and produced a null correctness/rework result: both frozen line-mapper implementations passed 20,590 common checks plus 161,669 fresh post-green checks with zero candidate failures. EFM rejected a plausible `splitlines()` architecture before code, but build-first independently selected the same correct explicit scanner.
+
+The highest-information next step is **independent reproduction or representative real-project use**, not another same-investigator bounded toy build. Until that evidence exists, no E4 methodology, E6 operational, superiority, or statistical-significance claim is warranted.
