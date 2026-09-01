@@ -1,0 +1,24 @@
+# Metrics — Experiment 014 DAGPlan
+
+- track: EFM-native
+- protocol: v0.3
+- clean replication eligible: yes
+- active elapsed time: not independently instrumented
+- admitted consequential assumptions: 6
+- prebuild completeness: 6 tested / 0 deferred / 0 removed / 0 unaccounted
+- preimplementation architectural/operational design changes: 5 material constraints (frontier snapshot, lexical tie authority, duplicate-task rejection, unknown-reference rejection, duplicate-dependency rejection)
+- implementation logical non-comment LOC: 64
+- integration-test logical non-comment LOC: 63
+- independent expectation-check logical non-comment LOC: 18
+- post-green logical non-comment LOC: 29
+- judge logical non-comment LOC: 90
+- initial integration: 11 pass / 0 fail
+- post-green challenge: 720 declaration permutations / pass
+- judge falsifications: 5 attempted / 5 rejected / 0 accepted
+- third-party dependencies introduced: 0
+- application defects found after implementation: 0
+- evaluator defects observed: 0
+- implementation discarded/reworked: 0
+- evidence level reached: E5
+- EFM changed final design: yes — evidence rejected live-frontier staging and several permissive input shortcuts before implementation
+- E6 operational evidence: none
