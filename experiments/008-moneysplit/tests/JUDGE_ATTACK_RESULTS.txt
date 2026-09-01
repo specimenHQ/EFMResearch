@@ -1,0 +1,2 @@
+PASS: 4/4 known-false allocation implementations rejected; accepted implementation accepted.
+Mutants: binary-float remainder ranking, independent rounding without conservation, reverse tie authority, and silently accepting all-zero weights.

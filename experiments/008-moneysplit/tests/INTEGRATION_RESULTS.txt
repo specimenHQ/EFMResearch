@@ -1,0 +1,2 @@
+10 integration tests passed / 0 failed after correcting one evaluator error.
+Initial harness falsely rejected the float-counterexample case because the hand-written expected allocation was wrong; an independent `fractions.Fraction` oracle corrected the expected values. No application code changed for that failure.
