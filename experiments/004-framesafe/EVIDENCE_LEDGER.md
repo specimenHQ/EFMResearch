@@ -1,14 +1,16 @@
 # Evidence Ledger — Experiment 004 FrameSafe
 
-| ID | Result | Evidence | Decision effect |
-|---|---|---|---|
-| A1 | confirmed | E2 | use exact-read loop; never assume one `recv` fills request |
-| A2 | confirmed with neighbors | E2 | 4-byte length prefix retained; empty and adjacent frames included |
-| A3 | confirmed | E2/E5 | clean EOF only before header; partial header/payload is truncation |
-| A4 | confirmed | E2/E5 | reject declared oversize immediately after header |
-| A5 | confirmed | E2/E5 | retain `struct !I` network-order uint32 framing |
-| A6 | confirmed | E2/E5 | implement total frame deadline rather than relying on per-read socket timeout |
-| J1 | judge hardened | E3 | 7/7 known-false readers rejected, including near-miss partial EOF and off-by-one max |
-| I1 | integration | E5 | 11/11 integration tests pass; post-green second-frame stall preserves first frame and times out second |
+Protocol: v0.2
 
-No E6 operational claim.
+| ID | Evidence | Strength | Decision |
+|---|---|---|---|
+| A1 | one-byte availability caused `recv(4)` to return one byte | E2 | exact-read loop required |
+| A2 | adjacent, empty, and binary frames separated under 4-byte prefix | E2 | fixed length prefix retained |
+| A3 | clean EOF, partial header, and partial payload produced distinct outcomes | E2 → E5 | clean EOF returns `None`; partial frame raises `TruncatedFrame` |
+| A4 | exact-max accepted; max+1 rejected from header | E2 → E5 | reject oversize before payload read |
+| A5 | `!I` produced network-order bytes `01 02 03 04` | E2 | use network byte order |
+| A6 | 0.10s per-read timeout allowed ~0.28s slow read | E2 → E5 | implement monotonic total-frame deadline |
+| J1 | 8 deliberately false/near-miss designs rejected | E3 | judge hardened |
+| I1 | real localhost TCP with fragmented/coalesced three-frame stream passed after first green suite | E5 | integration claim retained |
+
+No E6 operational evidence is claimed.

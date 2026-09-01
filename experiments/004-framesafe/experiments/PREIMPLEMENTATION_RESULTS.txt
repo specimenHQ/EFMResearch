@@ -1,6 +1,0 @@
-A1 PASS partial recv observed
-A2 PASS adjacent frames and empty payload separated
-A3 PASS clean EOF and partial-header EOF are distinguishable
-A4 PASS oversize detectable from header before payload read
-A5 PASS !I stable for tested uint32 boundaries
-A6 PASS per-read timeout allowed total frame time 0.242s > 0.10s
