@@ -1,0 +1,2 @@
+PASS: 5/5 known-false designs rejected; accepted implementation accepted
+Mutants: length-only corruption acceptance; CRC-only length-location loss; no max bound; single-write partial loss; repair-on-any-error evidence destruction
