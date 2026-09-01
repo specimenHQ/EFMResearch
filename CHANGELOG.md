@@ -59,3 +59,23 @@
 - Post-green challenge: all 720 declaration permutations of a new six-task graph matched an independent depth oracle.
 - Adversarial judge: 5/5 known-false planners rejected.
 - Accepted at E5 within finite in-memory dependency-planning scope; no E6, superiority, distributed-execution, or cybersecurity claim.
+
+## 2026-08-31 — Experiment 015 SpanEdit completed
+
+- Completed the third clean Protocol-v0.3 run in a non-cyber Unicode text-transformation domain.
+- Passed the prebuild completeness gate with 6 tested / 0 deferred / 0 removed / 0 unaccounted consequential assumptions.
+- Preimplementation evidence rejected left-to-right original-coordinate mutation and confirmed same-position insertion ambiguity.
+- Independently checked complex expected output using a forward-streaming reconstruction.
+- Initial integration suite: 14/14 passing with no application rework.
+- Post-green challenge: all 720 declaration permutations of a new Unicode/boundary fixture matched the independent streaming oracle.
+- Judge v0 was rejected after an exception on a known-good case escaped the verifier; no E3 result was accepted from the defective judge.
+- Corrected judge rejected 5/5 known-false editors and accepted the implementation.
+- Accepted at E5 within finite in-memory Python-string editing scope; no E6, superiority, grapheme-cluster, collaborative-editing, or cybersecurity claim.
+
+## 2026-08-31 — Protocol v0.3 review after experiment 015
+
+- Reviewed the frozen 013–015 block.
+- Found no repeated protocol-integrity defect requiring a new rule or version.
+- Retained Protocol v0.3 unchanged; no v0.4 created.
+- Identified research design, not protocol mechanics, as the dominant current limitation: same investigator/model, synthetic tasks, no independent E4 methodology reproduction, no operational E6 evidence, and too few direct controlled comparisons.
+- Set the preferred next phase to a preregistered non-cyber build-first versus EFM comparison, preserving a null result if both arms perform equally well.
