@@ -37,3 +37,14 @@
 - Preserved all earlier protocol versions and experiment classifications unchanged.
 - Restricted active continuation to non-cyber software domains.
 - Frozen v0.3 for experiments 013–015 unless a protocol-integrity defect makes continued use invalid.
+
+## 2026-08-31 — Experiment 013 WallClock completed
+
+- Completed the first clean Protocol-v0.3 EFM-native run in a non-cyber local scheduling/timezone domain.
+- Passed the new prebuild completeness gate with 6 tested / 0 deferred / 0 removed / 0 unaccounted consequential assumptions.
+- Preimplementation evidence rejected direct timezone attachment as a validity authority and rejected fixed 24-hour UTC stepping for daily local schedules across DST.
+- Independently checked nontrivial evaluator expectations using fixed-offset arithmetic and UTC-to-local transition observations.
+- Final integration suite: 12/12 passing.
+- Post-green repeated-time range challenge: passed.
+- Adversarial judge: 5/5 known-false designs rejected.
+- Accepted at E5 within the tested local-scheduling scope; no E6, superiority, all-timezone, or cybersecurity claim.
