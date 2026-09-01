@@ -1,0 +1,1 @@
+PASS — 720 declaration permutations of the new Unicode/boundary-edit fixture matched the independent forward-streaming oracle 'Ω<EMOJI>bćFGH?IJ'.
