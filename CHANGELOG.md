@@ -94,3 +94,15 @@
 - Candidate rework: zero for both arms.
 - Classified as a null delivered-correctness/rework result: EFM produced more prebuild evidence but no observed final architecture or correctness advantage.
 - This is the repository's second controlled comparison with a null correctness result, reinforcing the need for scope discipline and higher-information future research rather than more same-investigator bounded trials.
+
+## 2026-09-01 — Future-AI handoff durability phase
+
+- Ran Fresh-Context Reconstruction Test 001 using a reduced DAGPlan packet on another AI platform.
+- Preregistered threshold: 80+/100 with no critical evidence-scope failure; 90+ strong pass.
+- External reconstruction scored 96/100 with zero critical failures.
+- The fresh model recovered the frozen goal, A1–A6 evidence chains, E2/E3/E5 boundaries, and correctly distinguished evidence-conflicting semantic changes from an unproven DFS replacement that would require new evidence.
+- External critique found that the reduced packet omitted runnable microtests, complete integration tests, independent oracle code, and judge mutants.
+- Repository inspection confirmed those artifacts already existed; the defect was packaging rather than the underlying experiment record.
+- Added `FUTURE_AI_HANDOFF_STANDARD.md` v0.1 as an artifact layer separate from Protocol v0.3.
+- Added reusable `templates/FUTURE_AI_HANDOFF.md` and experiment-specific `experiments/014-dagplan/FUTURE_AI_HANDOFF.md`.
+- Built Fresh-Context Reconstruction Test 002 with runnable prebuild microtests, implementation, integration suite, independent oracle, adversarial judge, and post-green challenge to test safe future continuation rather than prose reconstruction alone.
