@@ -48,3 +48,14 @@
 - Post-green repeated-time range challenge: passed.
 - Adversarial judge: 5/5 known-false designs rejected.
 - Accepted at E5 within the tested local-scheduling scope; no E6, superiority, all-timezone, or cybersecurity claim.
+
+## 2026-08-31 — Experiment 014 DAGPlan completed
+
+- Completed the second clean Protocol-v0.3 run in a non-cyber dependency-planning domain.
+- Passed the prebuild completeness gate with 6 tested / 0 deferred / 0 removed / 0 unaccounted consequential assumptions.
+- Preimplementation evidence rejected live-frontier stage mutation and exposed duplicate-task overwrite, unknown-node invention, and duplicate-dependency accounting hazards.
+- Independently checked a nontrivial expected staging with a recursive longest-dependency-depth oracle.
+- Initial integration suite: 11/11 passing with no application rework.
+- Post-green challenge: all 720 declaration permutations of a new six-task graph matched an independent depth oracle.
+- Adversarial judge: 5/5 known-false planners rejected.
+- Accepted at E5 within finite in-memory dependency-planning scope; no E6, superiority, distributed-execution, or cybersecurity claim.
