@@ -79,3 +79,18 @@
 - Retained Protocol v0.3 unchanged; no v0.4 created.
 - Identified research design, not protocol mechanics, as the dominant current limitation: same investigator/model, synthetic tasks, no independent E4 methodology reproduction, no operational E6 evidence, and too few direct controlled comparisons.
 - Set the preferred next phase to a preregistered non-cyber build-first versus EFM comparison, preserving a null result if both arms perform equally well.
+
+## 2026-08-31 — Experiment 016 Line Mapper controlled comparison completed
+
+- Preregistered five non-cyber candidate tasks and randomly selected `line_mapper` using Python `secrets.choice`.
+- Wrote and froze the build-first source before any exploratory or EFM testing.
+- Ran the EFM arm only after build-first freeze; EFM passed the v0.3 prebuild gate 6/6 and falsified `str.splitlines()` as authority for the frozen separator semantics.
+- Froze the EFM source before post-build execution.
+- Authored the common evaluator only after both candidate hashes were frozen.
+- Common judge rejected 5/5 known-false line mappers before candidate scoring.
+- Preserved one common runner/import defect separately; candidate sources, hashes, evaluator, and oracle were unchanged by the runner correction.
+- Initial common evaluation: build-first 20,590/20,590 pass; EFM 20,590/20,590 pass.
+- Fresh post-green common challenge: build-first 161,669/161,669 pass; EFM 161,669/161,669 pass.
+- Candidate rework: zero for both arms.
+- Classified as a null delivered-correctness/rework result: EFM produced more prebuild evidence but no observed final architecture or correctness advantage.
+- This is the repository's second controlled comparison with a null correctness result, reinforcing the need for scope discipline and higher-information future research rather than more same-investigator bounded trials.
