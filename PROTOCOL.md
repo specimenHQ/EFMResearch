@@ -1,8 +1,8 @@
 # EFM Research Protocol
 
-Version: `0.2 — Claim-scope hardening`  
+Version: `0.3 — Prebuild completeness and evaluator integrity`  
 Effective: `2026-08-31`  
-Status: `FROZEN FOR EXPERIMENTS #004–#006`
+Status: `FROZEN FOR EXPERIMENTS #013–#015`
 
 ## Purpose
 
@@ -48,7 +48,19 @@ A passing fixture supports only the invariant it actually exercises. Do not gene
 
 Do not code a broad implementation merely to discover whether the assumption was valid.
 
-## 4. Run the smallest credible microtest
+## 4. Pass the prebuild completeness gate
+
+Before meaningful implementation begins, every admitted existential, architectural, and consequential operational assumption must be marked as one of:
+
+- **tested** — evidence has been recorded at the declared boundary;
+- **deferred with reason** — the assumption remains outside the present implementation claim and the reason is durable;
+- **removed from active scope** — the project no longer relies on that assumption.
+
+An assumption may not simply remain untested and silently carried into implementation.
+
+If meaningful implementation begins while an admitted consequential assumption is unaccounted for, preserve the run but do not classify it as a clean EFM-native replication.
+
+## 5. Run the smallest credible microtest
 
 A microtest must:
 
@@ -62,7 +74,7 @@ When a claim depends on equivalence, identity, parsing, classification, routing,
 
 A test that merely prints an expected label is not evidence of the underlying behavior.
 
-## 5. Attack the judge
+## 6. Attack the judge and check important expectations
 
 Before relying on an important evaluator, give it one or more deliberately plausible false cases.
 
@@ -78,9 +90,16 @@ Examples include:
 - expected phrases without the required causal behavior;
 - expected failure labels produced by the wrong underlying failure class.
 
-If the judge accepts a known falsification, stop and improve the judge before interpreting candidate results.
+When an important expected result is nontrivial or hand-derived, independently check that expectation before treating a mismatch as an application defect. Acceptable checks include:
 
-## 6. Record evidence strength
+- a separately derived oracle;
+- an invariant that does not reuse the candidate logic;
+- an alternate representation or calculation;
+- a neighboring known-good case whose result is independently obvious.
+
+If the judge accepts a known falsification, or an expected value cannot survive its independent check, stop and improve the judge before interpreting candidate results.
+
+## 7. Record evidence strength
 
 Use the existing ordinal evidence scale:
 
@@ -94,13 +113,13 @@ Use the existing ordinal evidence scale:
 
 Do not translate these levels into invented confidence percentages.
 
-## 7. Let evidence constrain implementation
+## 8. Let evidence constrain implementation
 
 When existential and architectural assumptions have credible evidence, implement the smallest design consistent with that evidence.
 
 Do not add components merely because they are conventional. Record any architecture decision that is explicitly earned or rejected by an experiment.
 
-## 8. Run a thin integration checkpoint
+## 9. Run a thin integration checkpoint
 
 Individually supported mechanisms must be combined early enough to expose interaction failures before the project becomes expensive to change.
 
@@ -114,7 +133,7 @@ A first green integration run is a checkpoint, not automatically completion. Bef
 
 An E2/E3 component result must not be presented as E5 or E6 evidence.
 
-## 9. Stop rules
+## 10. Stop rules
 
 Stop testing and decide when:
 
@@ -131,7 +150,7 @@ Return from building to testing when:
 - integration creates an unexplained interaction failure;
 - cost, authority, provenance, recovery, or another critical boundary changes.
 
-## 10. Preserve failures and protocol history
+## 11. Preserve failures and protocol history
 
 Do not delete or rewrite a failed experiment merely because a later design succeeds.
 
@@ -142,7 +161,7 @@ A protocol change must:
 3. state whether earlier results remain comparable;
 4. take effect only for subsequent experiments unless a rerun is explicitly labeled as such.
 
-## 11. Required per-project output
+## 12. Required per-project output
 
 At minimum, an EFM-native experiment should leave:
 
@@ -150,16 +169,20 @@ At minimum, an EFM-native experiment should leave:
 - decision map;
 - assumption register;
 - claim scope for important microtests;
+- prebuild completeness status for admitted consequential assumptions;
 - microtest evidence;
 - evidence ledger;
 - judge attack where applicable;
+- independent expectation checks where important expected values are nontrivial;
 - implementation or explicit no-build decision;
 - integration checkpoint;
 - metrics record;
 - outcome summary including negative results.
 
-## 12. Replication constraint
+## 13. Replication constraint
 
-Protocol v0.2 applies prospectively beginning with experiment #004. Experiments #001–#003 remain v0.1 studies.
+Protocol v0.3 applies prospectively beginning with experiment #013. Earlier studies retain the protocol version and clean/deviant classification recorded at the time.
 
-Do not revise v0.2 during experiments #004–#006 merely to improve an outcome. Record proposed changes separately and review them after #006 unless a protocol-integrity defect makes continued use invalid.
+Do not revise v0.3 during experiments #013–#015 merely to improve an outcome. Record proposed changes separately and review them after #015 unless a protocol-integrity defect makes continued use invalid.
+
+Active continuation is restricted to non-cyber software domains; historical material remains preserved but new experiments do not study cybersecurity questions.
