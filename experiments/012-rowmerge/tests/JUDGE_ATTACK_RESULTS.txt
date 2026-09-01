@@ -1,0 +1,7 @@
+REJECTED — numeric identifier coercion
+REJECTED — duplicate-ID last-write-wins overwrite
+REJECTED — source-order authority
+REJECTED — naive comma-split CSV parser
+REJECTED — lowercase identifier normalization (near miss)
+ACCEPTED — current RowMerge implementation
+PASS: 5/5 known-false designs rejected; accepted implementation accepted.
