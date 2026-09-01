@@ -1,0 +1,6 @@
+Common evaluation after both source hashes were frozen and after the common judge rejected all 5 known-false candidates:
+
+build-first: 20,590 checks, 0 failures
+EFM:         20,590 checks, 0 failures
+
+Candidate source rework after common evaluation: 0 for both arms.
