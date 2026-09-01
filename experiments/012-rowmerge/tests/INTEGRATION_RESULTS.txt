@@ -1,0 +1,5 @@
+First integration run: 11 tests run / 10 passed / 1 false rejection.
+The failure was in the evaluator's hand-written expected Unicode lexicographic order; application code was unchanged.
+Evaluator corrected.
+Final integration run: 11 tests run / 11 passed / 0 failed.
+Post-green exact-identity challenge: composed/decomposed Unicode forms and A/a remained distinct identifiers as required.
