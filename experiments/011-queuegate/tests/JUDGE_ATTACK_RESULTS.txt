@@ -1,0 +1,2 @@
+PASS: 5/5 known-false designs rejected; accepted implementation accepted
+Mutants: split close/admission authority; immediate sentinel on full queue; close without drain; blocking admission; worker death on handler exception
