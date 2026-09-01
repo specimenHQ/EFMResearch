@@ -1,0 +1,2 @@
+10 integration tests passed / 0 failed after evaluator precision correction.
+Initial harness had one false rejection from exact float equality (`0.30000000000000004` vs `0.3`); changed to tolerance-based assertion before accepting results.

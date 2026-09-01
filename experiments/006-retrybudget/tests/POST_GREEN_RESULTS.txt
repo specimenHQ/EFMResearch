@@ -1,0 +1,1 @@
+PASS: oversleep/clock advance rechecked before retry; no late attempt started

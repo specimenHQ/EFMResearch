@@ -1,0 +1,6 @@
+PASS: 5/5 known-false implementations rejected
+- truthiness-as-success authority
+- retry-all-exceptions
+- max-attempt off-by-one
+- missing total deadline
+- missing post-sleep deadline recheck
