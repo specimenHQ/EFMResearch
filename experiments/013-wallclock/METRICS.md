@@ -1,0 +1,21 @@
+# Metrics — Experiment 013 WallClock
+
+- track: EFM-native
+- protocol: v0.3
+- clean replication eligible: yes
+- active elapsed time: not independently instrumented
+- admitted assumptions: 6
+- prebuild completeness: 6 tested / 0 deferred / 0 removed / 0 unaccounted
+- preimplementation architectural or operational strategy changes: 2 material constraints (reject direct attachment as validity authority; reject fixed UTC 24-hour stepping)
+- evaluator expectation checks: completed before interpreting integration mismatches
+- integration tests: 12 passed / 0 failed
+- post-green challenge: 1 / passed
+- judge falsifications: 5 attempted / 5 rejected / 0 accepted
+- third-party dependencies introduced: 0
+- implementation discarded after integration: 0
+- consequential implementation defects found after build: 0
+- evaluator defects observed: 0
+- evidence ceiling: E5
+- operational E6 evidence: none
+- EFM changed final design: yes
+- cybersecurity scope: excluded
