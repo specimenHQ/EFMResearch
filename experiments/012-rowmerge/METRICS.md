@@ -1,0 +1,29 @@
+# Metrics — Experiment 012 RowMerge
+
+- track: EFM-native
+- domain: local CSV/data reconciliation
+- protocol version used: v0.2 procedure, unchanged during the run
+- protocol governance note: current root `PROTOCOL.md` still names #004–#006 as its explicit freeze window; this experiment does not rewrite that historical status line
+- goal/decision map/assumptions frozen before testing: yes
+- admitted assumptions: 6
+- assumptions microtested before implementation: 6
+- preimplementation naive-design falsifications: 4 (A1, A3, A4, A5)
+- parser support findings: 1 (A2)
+- explicit scope-boundary finding: 1 (A6)
+- implementation logical non-comment LOC: 92
+- integration-test logical non-comment LOC: 76
+- judge logical non-comment LOC: 62
+- first integration: 10 pass / 1 evaluator false rejection
+- application defects found at first integration: 0
+- evaluator defects found: 1
+- final integration: 11 pass / 0 fail
+- post-green consequential challenge: 1 / pass
+- judge false cases: 5 attempted / 5 rejected / 0 accepted
+- judge false-acceptance rate: 0/5
+- accepted implementation accepted by judge: yes
+- third-party dependencies: 0
+- implementation discarded/reworked: 0
+- evidence level reached: E5
+- E6 operational evidence: none
+- EFM changed final design: yes — exact string identity, duplicate rejection, invalid-row separation, and deterministic sorting were all evidence-constrained before implementation
+- cybersecurity scope: excluded
