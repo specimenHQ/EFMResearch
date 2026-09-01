@@ -1,0 +1,6 @@
+Fresh post-green common challenge using seed 160161 and 1,004 larger mixed-Unicode/newline cases:
+
+build-first: 161,669 checks, 0 failures
+EFM:         161,669 checks, 0 failures
+
+No candidate source changes were made before or after this challenge.
