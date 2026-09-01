@@ -1,0 +1,4 @@
+12 integration tests run
+12 passed
+0 failed
+Post-green challenge: PASS — 2026-10-31 through 2026-11-02 at local 01:30 classified unique / ambiguous / unique, yielding four real instants while preserving requested wall time.
