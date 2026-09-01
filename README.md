@@ -1,36 +1,56 @@
 # Evidence-First Microtesting (EFM)
 
 **Status:** exploratory research repository  
-**Current protocol:** `0.1 — Frozen for initial replication`  
-**Date frozen:** 2026-08-31
+**Current protocol:** `0.3 — Prebuild completeness and evaluator integrity`  
+**Effective:** 2026-08-31  
+**Active research boundary:** non-cyber software domains
 
-Evidence-First Microtesting (EFM) is being investigated as a way to resolve dangerous software-development assumptions with the smallest credible falsifiable experiments, independently inspect their durable evidence, and adversarially test the measuring instrument before implementation expands.
+Evidence-First Microtesting (EFM) is being investigated as a way to resolve consequential software-development assumptions with the smallest credible falsifiable experiments, independently inspect durable evidence, and adversarially test the measuring instrument before implementation expands.
 
-This repository exists to preserve the research history. It is intentionally not a claim that EFM is already a proven methodology.
+This repository preserves the research history. It is intentionally not a claim that EFM is already a proven methodology.
 
 ## Research tracks
 
 1. **EFM-native development** — begin with goal, decisions, assumptions, and evidence before meaningful architecture is committed.
-2. **Prebugging** — apply EFM adversarially to software developed by ordinary methods to search for latent defects and false confidence.
+2. **Prebugging** — use the method to search for latent defects and false confidence in existing software.
 3. **Comparative studies** — compare EFM with ordinary development under frozen requirements and common evaluation.
-4. **Negative/null cases** — record cases where EFM adds cost without changing the result.
+4. **Negative/null cases** — retain cases where EFM adds cost without changing the result.
+
+## Protocol history
+
+- `v0.1` governed experiments 001–003.
+- `v0.2` added claim-scope hardening and post-green integration challenges.
+- `v0.3` begins with experiment 013 and adds a prebuild completeness gate plus independent checking of nontrivial evaluator expectations.
+- `PROTOCOL_REVIEW_AFTER_012.md` records the evidence that motivated v0.3.
+
+Earlier experiments keep their original classifications. Protocol changes are prospective rather than retroactive.
+
+## Current evidence pattern
+
+The repository now contains both positive and negative methodological evidence:
+
+- small bounded work can pass equally well without EFM, producing a useful null result;
+- multiple EFM-native runs changed architecture before implementation;
+- some first green implementations survived post-green challenges without rework;
+- some runs exposed false confidence in the implementation or in an earlier microtest;
+- multiple runs exposed evaluator defects rather than application defects;
+- protocol-deviant runs are retained but excluded from clean-replication credit.
+
+No E0–E6 level is converted into a confidence percentage, and no universal EFM score is used.
 
 ## Repository map
 
 - `RESEARCH_AGENDA.md` — original v0.1 exploratory agenda, preserved as the historical starting point.
-- `PROTOCOL.md` — frozen procedure for the next replication phase.
-- `METRICS.md` — measurements to collect consistently.
-- `experiments/001-neutral-timestamp/` — first neutral comparison; EFM added confidence but did not improve the delivered result.
-- `experiments/002-slotlock/` — first EFM-native build; EFM influenced architecture and exposed a false conflict classification during integration.
-- `experiments/003-mergesafe/` — second EFM-native build; cross-domain filesystem/data experiment in which EFM changed parser design and later exposed false confidence in its own first equivalence microtest.
-- `templates/` — records to use for future experiments.
-- `prebugging/` — future adversarial studies on existing software.
+- `PROTOCOL.md` — current prospective procedure.
+- `PROTOCOL_REVIEW_AFTER_012.md` — evidence-based protocol review leading to v0.3.
+- `METRICS.md` — descriptive measurements collected across studies.
+- `experiments/` — append-only experiment history.
+- `templates/` — reusable experiment records.
+- `prebugging/` — separate methodological track.
 - `results/` — aggregate results only after enough comparable studies exist.
 
-## Research rule
+## Active continuation
 
-Negative results stay in the repository. Protocol changes are versioned and dated rather than silently rewriting prior experiments.
+New work is restricted to non-cyber software domains such as data transformation, numerical logic, scheduling, state machines, local application behavior, and ordinary file/data processing. Historical material remains preserved but is not being expanded into cybersecurity research.
 
-## Current status
-
-EFM-native build #003 (MergeSafe) is complete under the unchanged frozen `PROTOCOL.md` v0.1. The next research action is a post-003 protocol review before beginning build #004; any protocol changes must be versioned rather than applied retroactively.
+The next clean EFM-native replication is experiment 013 under frozen Protocol v0.3.
