@@ -1,0 +1,6 @@
+PASS — common evaluator rejected all 5 known-false line mappers before either frozen candidate was executed.
+Unicode over-splitting: 12,412 failures across 20,590 checks.
+LF-only separator handling: 6,984 failures across 15,980 checks.
+CRLF treated as two separators: 2,072 failures across 20,590 checks.
+Trailing empty line omitted: 144 failures across 20,494 checks.
+CRLF interior offset accepted: 45 failures across 20,590 checks.
