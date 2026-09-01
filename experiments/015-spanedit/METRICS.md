@@ -1,0 +1,25 @@
+# Metrics — Experiment 015 SpanEdit
+
+- track: EFM-native
+- protocol: v0.3
+- clean replication eligible: yes
+- active elapsed time: not independently instrumented
+- admitted consequential assumptions: 6
+- prebuild completeness: 6 tested / 0 deferred / 0 removed / 0 unaccounted
+- material preimplementation design constraints: right-to-left application, explicit half-open conflict rules, rejection of same-position insertions, Python code-point coordinate scope, independent streaming oracle
+- implementation logical non-comment LOC: 69
+- integration-test logical non-comment LOC: 72
+- independent expectation-check logical non-comment LOC: 28
+- post-green logical non-comment LOC: 44
+- corrected judge logical non-comment LOC: 78
+- initial integration: 14 pass / 0 fail
+- post-green challenge: 720 declaration permutations / pass
+- initial judge: rejected due evaluator defect before E3 acceptance
+- corrected judge falsifications: 5 attempted / 5 rejected / 0 accepted
+- third-party dependencies introduced: 0
+- application defects found after implementation: 0
+- evaluator defects observed: 1
+- implementation discarded/reworked: 0
+- evidence level reached: E5
+- EFM changed final design: yes — left-to-right mutation and ambiguous same-position insertion semantics were rejected before implementation
+- E6 operational evidence: none
