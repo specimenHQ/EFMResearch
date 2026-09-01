@@ -1,0 +1,3 @@
+e311142627d172530a2d2038152572ac8a9a4c8d3987896410931efc627ceb91  line_mapper.py
+
+EFM source frozen after the v0.3 prebuild completeness gate and before any post-build execution or common evaluation.
