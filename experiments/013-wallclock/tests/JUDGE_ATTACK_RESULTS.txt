@@ -1,0 +1,8 @@
+PASS — adversarial judge rejected all 5 known-false designs and accepted the current implementation.
+
+Rejected false designs:
+1. direct fold=0 timezone attachment treated as unique authority;
+2. offset difference alone treated as ambiguity;
+3. repeated valid folds collapsed to one instant;
+4. nonexistent wall time silently shifted forward;
+5. daily schedule advanced by fixed UTC 24-hour steps.
