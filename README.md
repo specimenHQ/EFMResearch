@@ -35,7 +35,8 @@ The repository now contains both positive and negative methodological evidence:
 - some runs exposed false confidence in the implementation or in an earlier microtest;
 - multiple runs exposed evaluator defects rather than application defects;
 - protocol-deviant runs are retained but excluded from clean-replication credit;
-- experiment 013 demonstrated the new v0.3 gates cleanly: all admitted consequential assumptions were dispositioned before code and important evaluator expectations were independently checked before acceptance.
+- experiment 013 demonstrated the new v0.3 gates cleanly in a scheduling/timezone domain;
+- experiment 014 repeated the v0.3 pattern in dependency planning: all admitted consequential assumptions were tested before code, a nontrivial expectation was independently derived, and the first implementation survived integration plus a 720-permutation post-green challenge without rework.
 
 No E0–E6 level is converted into a confidence percentage, and no universal EFM score is used.
 
@@ -54,4 +55,4 @@ No E0–E6 level is converted into a confidence percentage, and no universal EFM
 
 New work is restricted to non-cyber software domains such as data transformation, numerical logic, scheduling, state machines, local application behavior, and ordinary file/data processing. Historical material remains preserved but is not being expanded into cybersecurity research.
 
-Experiment 013 WallClock is complete as the first clean Protocol-v0.3 run, accepted at E5 within its tested local-scheduling scope. The next prospective replication is experiment 014 under the unchanged frozen v0.3 protocol.
+Experiments 013 WallClock and 014 DAGPlan are complete as clean Protocol-v0.3 EFM-native runs, each accepted at E5 within its tested scope. The next prospective replication is experiment 015 under the unchanged frozen v0.3 protocol; protocol review follows after 015.
