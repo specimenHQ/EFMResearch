@@ -1,0 +1,3 @@
+Initial judge v0: REJECTED — an exception on a known-good boundary-insertion fixture escaped `verify` and aborted mutant accounting. No E3 result accepted from v0.
+Corrected judge: PASS — 5/5 known-false editors rejected; accepted implementation accepted.
+Mutants: left-to-right coordinate shift, rejection of valid boundary insertion, allowance of interior insertion, ambiguous same-position insertions, and input declaration-order authority.
