@@ -23,3 +23,14 @@ Append only. Corrections and later interpretations must be added as new records 
 - Does not establish: That the new five-file continuity format is sufficient for long-running real-world projects.
 - Project consequence: Build the lighter continuity layer on top of the existing handoff lesson: summaries point to durable evidence rather than replacing it.
 - Supersedes/corrects: `none`
+
+## EV-20260902-006
+- Date: `2026-09-02`
+- Question/assumption: Can the five-file continuity layer be instantiated prospectively during live Shopify work while preserving evidence boundaries instead of reconstructing conclusions from conversation memory?
+- Observation: During live Resiimark Shopify work, a dedicated package was created under `field_work/resiimark/` containing `CURRENT_STATE.md`, `EVIDENCE_LEDGER.md`, `DECISIONS.md`, `OPEN_QUESTIONS.md`, `HANDOFF.md`, and a raw Shopify baseline artifact. When Shopify tools exposed two different domain strings, the analytics were temporarily withheld from the evidence ledger until an authenticated Shopify GraphQL identity check established that both domains belonged to the same shop. Prior supplier cost observations that were not independently recaptured were explicitly left unknown rather than reconstructed from memory.
+- Source/artifact: `field_work/resiimark/HANDOFF.md`, `field_work/resiimark/EVIDENCE_LEDGER.md`, `field_work/resiimark/artifacts/SHOPIFY_BASELINE_2026-09-02.md`
+- Strength: `E1 — Observation` of initial live continuity use.
+- Supports: The five-file format can be applied prospectively during live work and can preserve provenance, claim boundaries, and unresolved evidence at this initial checkpoint.
+- Does not establish: That the format remains maintainable over time, that a fresh AI can yet reconstruct Resiimark correctly from the package alone, or that EFM improves Shopify outcomes relative to ordinary work.
+- Project consequence: `Q-20260902-001` now has its first live prospective instance. Continue maintaining the Resiimark package through at least one consequential product decision, then test fresh-context reconstruction rather than treating initial creation as validation.
+- Supersedes/corrects: `none`
