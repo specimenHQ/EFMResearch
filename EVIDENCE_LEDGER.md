@@ -34,3 +34,14 @@ Append only. Corrections and later interpretations must be added as new records 
 - Does not establish: That the format remains maintainable over time, that a fresh AI can yet reconstruct Resiimark correctly from the package alone, or that EFM improves Shopify outcomes relative to ordinary work.
 - Project consequence: `Q-20260902-001` now has its first live prospective instance. Continue maintaining the Resiimark package through at least one consequential product decision, then test fresh-context reconstruction rather than treating initial creation as validation.
 - Supersedes/corrects: `none`
+
+## EV-20260902-007
+- Date: `2026-09-02`
+- Question/assumption: Can the continuity layer be applied to a second ongoing project while keeping reconstructed conversational history visibly separate from independently verified project state?
+- Observation: A second field package was created at `field_work/pipeline_lab/`. The owner's supplied prior pipeline-lab transcript was preserved as a bounded baseline reconstruction, while a current GitHub connector check that could not resolve `pipeline-lab` was recorded as a separate observation rather than being used to erase or confirm the historical report. The package leaves the current repository baseline explicitly unresolved and names reacquisition of the authoritative EXP-003 artifacts as the next action.
+- Source/artifact: `field_work/pipeline_lab/HANDOFF.md`, `field_work/pipeline_lab/EVIDENCE_LEDGER.md`, `field_work/pipeline_lab/artifacts/BASELINE_RECONSTRUCTION_2026-09-02.md`
+- Strength: `E1 — Observation` of a second live continuity instantiation.
+- Supports: The five-file/Microplane format can represent a second domain and can preserve a provenance conflict between reported history and present tool visibility without silently resolving it.
+- Does not establish: Long-term maintainability, fresh-context adequacy, or superiority over simpler notes.
+- Project consequence: `Q-20260902-001` now has two live field instances. The next useful evidence is prospective maintenance through consequential decisions and later fresh-context reconstruction, not more template creation.
+- Supersedes/corrects: `none`

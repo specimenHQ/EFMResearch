@@ -12,9 +12,15 @@ EFM has accumulated controlled experiments and fresh-context handoff evidence. T
 
 The first continuity format is defined in `CONTINUITY_STANDARD.md`.
 
+Two live field packages now exercise it:
+- `field_work/resiimark/` — prospective Shopify/prebugging case, `EV-20260902-006`.
+- `field_work/pipeline_lab/` — content-pipeline case, `EV-20260902-007`, with reconstructed prior conversation state kept explicitly separate from current repository verification.
+
 ## Evidence that currently governs the work
 - `EV-20260902-001` — live use makes continuity/stable carry-over an immediate operational requirement.
 - `EV-20260902-002` — prior handoff tests support durable artifact transfer across fresh AI contexts in the tested cases.
+- `EV-20260902-006` — first live continuity package can preserve provenance and unresolved evidence at initial checkpoint.
+- `EV-20260902-007` — a second live package can preserve a provenance conflict without silently resolving it.
 
 ## Decisions currently in force
 - `D-20260902-001` — use longitudinal real-world work as a primary learning path; controlled microtests remain available when useful.
@@ -24,13 +30,14 @@ The first continuity format is defined in `CONTINUITY_STANDARD.md`.
 - `Q-20260902-001` — whether the five-file format remains useful and maintainable in actual ongoing projects.
 
 ## Next action
-Apply the continuity templates prospectively to current field work. Record new observations at the time they affect a decision rather than reconstructing them later from conversation history.
+Maintain the two live packages through consequential decisions. In pipeline-lab, reacquire the authoritative EXP-003 artifacts and perform the next bounded cloud semantic-extraction test rather than redesigning architecture from conversational memory. In Resiimark, continue through a consequential supplier/product decision. Then test fresh-context reconstruction from durable packages alone.
 
 ## Do not assume
 - EFM has been scientifically validated as universally superior.
 - Field observations automatically establish causality.
 - Controlled microtesting has been abandoned; it remains a tool when isolation matters.
 - The five-file format is final. It is currently provisional and should earn its permanence through use.
+- A historical conversation reconstruction is equivalent to a verified current repository state.
 
 ## Read order
 1. `CURRENT_STATE.md`
@@ -38,4 +45,4 @@ Apply the continuity templates prospectively to current field work. Record new o
 3. relevant entries in `EVIDENCE_LEDGER.md`
 4. relevant entries in `DECISIONS.md`
 5. `CONTINUITY_STANDARD.md`
-6. raw/research artifacts referenced by those records
+6. the relevant field package under `field_work/`
