@@ -1,24 +1,31 @@
-# EFM Current State — 2026-09-01
+# EFM Current State — 2026-09-02
 
-## Practical purpose
-EFM is being used as a preconstruction method for unusual builds: resolve consequential uncertainty before architecture is committed, preserve why decisions were earned, and leave evidence a future AI can reconstruct without the original conversation.
+## Goal
+Use evidence-first reasoning during real work so consequential assumptions are challenged before they harden into expensive decisions, while preserving enough durable context that future humans or AI agents can continue from evidence rather than conversation memory.
 
-## Current method
-- Protocol: v0.3 remains unchanged.
-- Future-AI Handoff Standard: v0.1 is a separate packaging layer, not a protocol revision.
-- Active continuation remains non-cyber.
+## Exists now
+- Protocol v0.3 remains preserved.
+- `FUTURE_AI_HANDOFF_STANDARD.md` preserves the fuller reproducibility/handoff standard.
+- `CONTINUITY_STANDARD.md` v0.1 now defines a lighter operational storage layer for ongoing field use.
+- The EFMResearch repo itself now uses five continuity files: `CURRENT_STATE.md`, `EVIDENCE_LEDGER.md`, `DECISIONS.md`, `OPEN_QUESTIONS.md`, and `HANDOFF.md`.
+- Reusable project templates live under `templates/continuity/`.
 
-## AI handoff evidence
-- Test 001 — DAGPlan: 96/100, strong pass; exposed missing runnable evidence in the first packet.
-- Test 002 — DAGPlan improved handoff: 99/100, near-lossless pass.
-- Test 003 — SpanEdit evaluator provenance: 100/100, near-lossless pass; fresh AI correctly preserved rejected judge v0, evaluator-only correction, unchanged application, and E3/E5 boundaries.
+## Evidence-earned beliefs
+- Durable artifacts have transferred important EFM reasoning across fresh AI contexts in prior handoff tests — `EV-20260902-002`.
+- Current live use makes stable carry-over of observations and decisions an immediate operational requirement — `EV-20260902-001`.
 
-Practical conclusion only: durable EFM artifacts can currently transfer architecture reasoning, evidence limits, change-impact logic, and evaluator-failure provenance across fresh AI contexts/platforms. This is not an E4 methodology or E6 claim.
+## Active direction
+EFM is moving from a lab-centered validation mindset toward longitudinal field use. Controlled microtests remain available when a consequential uncertainty benefits from isolation, but they are one tool inside a broader loop:
 
-## Current prospective use
-Finishing Room is the first real prospective application. Work is deliberately stepwise.
+`uncertainty -> smallest credible action -> observable result -> evidence -> decision -> updated state`
 
-Active uncertainty only:
-> Can a future Finishing Room mechanism distinguish meaningful progression between pieces from restaging the same underlying pressure/function?
+Current real-world use includes Shopify work, where the useful test is whether real store/product decisions survive contact with actual conditions rather than whether they pass a synthetic laboratory scenario.
 
-Microtest 001 is frozen and awaiting outside-platform evaluation. No Finishing Room architecture or code change follows until that result is scored.
+## Next action
+Use the five-file continuity format prospectively in live work and observe whether it preserves state without becoming burdensome. This is tracked as `Q-20260902-001`.
+
+## Immediate cautions
+- Do not claim EFM is universally validated or superior.
+- Do not treat uncontrolled field observations as stronger evidence than they are.
+- Do not silently rewrite negative/null history.
+- The five-file format is provisional until field use shows it is durable and maintainable.
