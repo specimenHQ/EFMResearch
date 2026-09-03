@@ -67,3 +67,16 @@ Append only. Capture observation before interpretation.
 - Does not establish: that the transcript is absent from every local machine/archive or that the public source is unavailable.
 - Project consequence: open `Q-20260902-007`; do not run or score a hosted candidate against a reconstructed transcript that has not been verified against the frozen digest.
 - Conflict status: none.
+
+## EV-20260902-013
+- Date: `2026-09-02`
+- Question/assumption: Can the exact public source for the EXP-003 real calibration now be identified durably?
+- Observation: The owner supplied the exact source URL `https://youtu.be/UcBH6MCAst8?si=0AZSUVQwKja3yhdu`. Public search results associate video ID `UcBH6MCAst8` with Red Letter Media's `What Are Next for Star Trek?`, published/discussed on 2026-08-07. The subject matter is consistent with the frozen reference quotations and prior source description.
+- Source/artifact: owner-supplied YouTube URL in the 2026-09-02 continuation session; public web lookup of video ID `UcBH6MCAst8`; `pipeline-lab/EXPERIMENTS/EXP-003/real-reference-001.json`.
+- Source durability: URL and video ID are now preserved in this version-controlled ledger; the full transcript text remains to be durably reacquired.
+- Freshness/recheck: source locator verified on 2026-09-02; transcript text/digest still requires verification before execution.
+- Strength: `E1 — direct owner-supplied locator with public corroboration`.
+- Supports: the source-identity portion of the provenance problem is resolved; transcript retrieval can now target the exact video rather than reconstructing source identity from memory.
+- Does not establish: that a newly retrieved YouTube transcript is byte-for-byte identical to the 4,635-word frozen calibration text, that its SHA-256 matches the frozen digest, or that a hosted semantic candidate will pass.
+- Project consequence: advance to source-text recovery and digest verification; keep `Q-20260902-007` open until the transcript itself is verified.
+- Conflict status: narrows `EV-20260902-012`; it does not overwrite the earlier observation that the locator was previously missing.
